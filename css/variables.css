@@ -1,0 +1,106 @@
+/* css/variables.css */
+
+/* Import Outfit and Fira Code Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  /* Fonts */
+  --font-primary: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-mono: 'Fira Code', monospace;
+
+  /* Spacing Scale */
+  --spacing-xs: 0.25rem;  /* 4px */
+  --spacing-sm: 0.5rem;   /* 8px */
+  --spacing-md: 1rem;     /* 16px */
+  --spacing-lg: 1.5rem;   /* 24px */
+  --spacing-xl: 2.5rem;   /* 40px */
+  --spacing-2xl: 4rem;    /* 64px */
+
+  /* Border Radius */
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-full: 9999px;
+
+  /* Transitions */
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* Container Width */
+  --container-max-width: 1200px;
+}
+
+/* Default Theme (Dark Mode) */
+:root, [data-theme="dark"] {
+  --bg-primary: #080b10;
+  --bg-secondary: #0f131a;
+  --bg-tertiary: #161b22;
+  
+  /* Glassmorphism settings */
+  --bg-glass: rgba(15, 19, 26, 0.75);
+  --bg-glass-hover: rgba(22, 27, 34, 0.85);
+  --border-glass: rgba(255, 255, 255, 0.06);
+  --border-glass-hover: rgba(255, 255, 255, 0.12);
+  --backdrop-blur: blur(12px);
+
+  /* Colors */
+  --color-primary: #6366f1; /* Electric Indigo */
+  --color-primary-rgb: 99, 102, 241;
+  --color-secondary: #14b8a6; /* Neon Teal */
+  --color-secondary-rgb: 20, 184, 166;
+  
+  --color-text-primary: #f3f4f6; /* Cool White */
+  --color-text-secondary: #9ca3af; /* Slate Grey */
+  --color-text-muted: #6b7280;
+  
+  --color-border: #1f2937;
+  --color-border-light: #374151;
+
+  /* Special Accents */
+  --glow-color: rgba(99, 102, 241, 0.15);
+  --glow-color-secondary: rgba(20, 184, 166, 0.15);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 8px 30px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.5);
+  --shadow-primary: 0 4px 20px rgba(99, 102, 241, 0.3);
+}
+
+/* Light Theme overrides */
+[data-theme="light"] {
+  --bg-primary: #f8fafc;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f1f5f9;
+  
+  /* Glassmorphism settings */
+  --bg-glass: rgba(255, 255, 255, 0.8);
+  --bg-glass-hover: rgba(248, 250, 252, 0.9);
+  --border-glass: rgba(15, 23, 42, 0.06);
+  --border-glass-hover: rgba(15, 23, 42, 0.12);
+  --backdrop-blur: blur(12px);
+
+  /* Colors */
+  --color-primary: #4f46e5; /* Deep Indigo */
+  --color-primary-rgb: 79, 70, 229;
+  --color-secondary: #0d9488; /* Deep Teal */
+  --color-secondary-rgb: 13, 148, 136;
+  
+  --color-text-primary: #0f172a; /* Slate Dark */
+  --color-text-secondary: #475569; /* Slate Muted */
+  --color-text-muted: #94a3b8;
+  
+  --color-border: #e2e8f0;
+  --color-border-light: #cbd5e1;
+
+  /* Special Accents */
+  --glow-color: rgba(79, 70, 229, 0.08);
+  --glow-color-secondary: rgba(13, 148, 136, 0.08);
+
+  /* Shadows */
+  --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 8px 30px rgba(15, 23, 42, 0.08);
+  --shadow-lg: 0 16px 40px rgba(15, 23, 42, 0.12);
+  --shadow-primary: 0 4px 20px rgba(79, 70, 229, 0.2);
+}
